@@ -1,0 +1,8 @@
+AddType text/csv .csv
+AddType text/plain .md
+AddCharset UTF-8 .csv .md
+<IfModule mod_headers.c>
+  <FilesMatch "\.csv$">
+    Header set Content-Disposition "attachment; filename=\"health_and_help_candidates.csv\""
+  </FilesMatch>
+</IfModule>
