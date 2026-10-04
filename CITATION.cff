@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below."
+type: dataset
+title: "Health & Help. Open dataset of sexual and mental health services for sex workers in Thailand"
+abstract: >-
+  Health & Help is an open dataset, with its code and a prototype website, that lists organisations in
+  Thailand which offer sexual health or mental health services to sex workers. Every record carries the
+  web address of its source and a sentence copied word for word from that source. Built for the World
+  Bank Small AI for Development challenge, health track, at the Hack-Nation 7th Global AI Hackathon in
+  October 2026.
+authors:
+  - family-names: Hung
+    given-names: Jason
+date-released: 2026-10-04
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/newlivehung123123/health_and_help"
+url: "https://healthnhelp.aiinsocietyhub.com"
+keywords:
+  - sex workers
+  - sexual health
+  - mental health
+  - HIV
+  - Thailand
+  - open data
