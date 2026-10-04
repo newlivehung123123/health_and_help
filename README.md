@@ -118,7 +118,7 @@ The website reads `site/data/sites.json`. The script `scripts/build_site_data.py
 
 The public CSV excludes the model's notes, which can name people, and the bookkeeping columns of the discovery runs. Table 12 of the codebook describes the 25 columns of the public CSV. A pin on the map marks the capital of the province, from `config/province_points.csv`, and never the address of a service. After the two exclusions, 45 of the 54 remaining quotes are on their pages, and the website reports that count.
 
-The website can be viewed on a computer by serving the folder `site` and opening http://localhost:8722.
+The website can be viewed on a computer by serving the folder `site` and opening [https://healthnhelp.aiinsocietyhub.com/](https://healthnhelp.aiinsocietyhub.com/).
 
 ```bash
 python3 -m http.server 8722 --directory site
