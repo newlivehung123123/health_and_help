@@ -1,0 +1,78 @@
+﻿code,name_en,name_th,region,candidates,candidates_sex_worker_named
+TH-10,Bangkok,กรุงเทพมหานคร,Central,17,11
+TH-11,Samut Prakan,สมุทรปราการ,Central,1,1
+TH-12,Nonthaburi,นนทบุรี,Central,2,2
+TH-13,Pathum Thani,ปทุมธานี,Central,1,1
+TH-14,Phra Nakhon Si Ayutthaya,พระนครศรีอยุธยา,Central,0,0
+TH-15,Ang Thong,อ่างทอง,Central,0,0
+TH-16,Lop Buri,ลพบุรี,Central,0,0
+TH-17,Sing Buri,สิงห์บุรี,Central,0,0
+TH-18,Chai Nat,ชัยนาท,Central,0,0
+TH-19,Saraburi,สระบุรี,Central,0,0
+TH-20,Chon Buri,ชลบุรี,East,4,3
+TH-21,Rayong,ระยอง,East,1,0
+TH-22,Chanthaburi,จันทบุรี,East,0,0
+TH-23,Trat,ตราด,East,0,0
+TH-24,Chachoengsao,ฉะเชิงเทรา,East,0,0
+TH-25,Prachin Buri,ปราจีนบุรี,East,0,0
+TH-26,Nakhon Nayok,นครนายก,Central,0,0
+TH-27,Sa Kaeo,สระแก้ว,East,0,0
+TH-30,Nakhon Ratchasima,นครราชสีมา,Northeast,1,1
+TH-31,Buri Ram,บุรีรัมย์,Northeast,0,0
+TH-32,Surin,สุรินทร์,Northeast,0,0
+TH-33,Si Sa Ket,ศรีสะเกษ,Northeast,0,0
+TH-34,Ubon Ratchathani,อุบลราชธานี,Northeast,3,2
+TH-35,Yasothon,ยโสธร,Northeast,0,0
+TH-36,Chaiyaphum,ชัยภูมิ,Northeast,0,0
+TH-37,Amnat Charoen,อำนาจเจริญ,Northeast,1,1
+TH-38,Bueng Kan,บึงกาฬ,Northeast,0,0
+TH-39,Nong Bua Lam Phu,หนองบัวลำภู,Northeast,0,0
+TH-40,Khon Kaen,ขอนแก่น,Northeast,2,1
+TH-41,Udon Thani,อุดรธานี,Northeast,1,1
+TH-42,Loei,เลย,Northeast,0,0
+TH-43,Nong Khai,หนองคาย,Northeast,0,0
+TH-44,Maha Sarakham,มหาสารคาม,Northeast,0,0
+TH-45,Roi Et,ร้อยเอ็ด,Northeast,0,0
+TH-46,Kalasin,กาฬสินธุ์,Northeast,0,0
+TH-47,Sakon Nakhon,สกลนคร,Northeast,0,0
+TH-48,Nakhon Phanom,นครพนม,Northeast,0,0
+TH-49,Mukdahan,มุกดาหาร,Northeast,1,1
+TH-50,Chiang Mai,เชียงใหม่,North,7,7
+TH-51,Lamphun,ลำพูน,North,0,0
+TH-52,Lampang,ลำปาง,North,2,1
+TH-53,Uttaradit,อุตรดิตถ์,North,0,0
+TH-54,Phrae,แพร่,North,0,0
+TH-55,Nan,น่าน,North,0,0
+TH-56,Phayao,พะเยา,North,0,0
+TH-57,Chiang Rai,เชียงราย,North,3,3
+TH-58,Mae Hong Son,แม่ฮ่องสอน,North,1,1
+TH-60,Nakhon Sawan,นครสวรรค์,Central,1,0
+TH-61,Uthai Thani,อุทัยธานี,Central,0,0
+TH-62,Kamphaeng Phet,กำแพงเพชร,Central,0,0
+TH-63,Tak,ตาก,West,3,3
+TH-64,Sukhothai,สุโขทัย,Central,0,0
+TH-65,Phitsanulok,พิษณุโลก,Central,1,1
+TH-66,Phichit,พิจิตร,Central,0,0
+TH-67,Phetchabun,เพชรบูรณ์,Central,0,0
+TH-70,Ratchaburi,ราชบุรี,West,2,2
+TH-71,Kanchanaburi,กาญจนบุรี,West,1,1
+TH-72,Suphan Buri,สุพรรณบุรี,Central,0,0
+TH-73,Nakhon Pathom,นครปฐม,Central,2,1
+TH-74,Samut Sakhon,สมุทรสาคร,Central,0,0
+TH-75,Samut Songkhram,สมุทรสงคราม,Central,0,0
+TH-76,Phetchaburi,เพชรบุรี,West,0,0
+TH-77,Prachuap Khiri Khan,ประจวบคีรีขันธ์,West,0,0
+TH-80,Nakhon Si Thammarat,นครศรีธรรมราช,South,0,0
+TH-81,Krabi,กระบี่,South,0,0
+TH-82,Phangnga,พังงา,South,0,0
+TH-83,Phuket,ภูเก็ต,South,2,2
+TH-84,Surat Thani,สุราษฎร์ธานี,South,2,1
+TH-85,Ranong,ระนอง,South,1,1
+TH-86,Chumphon,ชุมพร,South,0,0
+TH-90,Songkhla,สงขลา,South,4,2
+TH-91,Satun,สตูล,South,0,0
+TH-92,Trang,ตรัง,South,0,0
+TH-93,Phatthalung,พัทลุง,South,0,0
+TH-94,Pattani,ปัตตานี,South,0,0
+TH-95,Yala,ยะลา,South,0,0
+TH-96,Narathiwat,นราธิวาส,South,0,0

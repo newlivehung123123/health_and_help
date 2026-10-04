@@ -1,0 +1,78 @@
+code,name_en,aliases_en,name_th,region,cluster,towns_en,towns_th
+TH-10,Bangkok,Krung Thep Maha Nakhon; Krung Thep,กรุงเทพมหานคร,Central,BKK,Bang Rak; Pathum Wan; Khlong Toei; Watthana; Din Daeng; Huai Khwang,บางรัก; ปทุมวัน; คลองเตย; วัฒนา; ดินแดง; ห้วยขวาง
+TH-11,Samut Prakan,Samut Prakarn,สมุทรปราการ,Central,C1,Bang Phli; Phra Pradaeng,บางพลี; พระประแดง
+TH-12,Nonthaburi,,นนทบุรี,Central,C1,Pak Kret; Bang Bua Thong,ปากเกร็ด; บางบัวทอง
+TH-13,Pathum Thani,Pathumthani,ปทุมธานี,Central,C1,Rangsit; Khlong Luang; Lam Luk Ka,รังสิต; คลองหลวง; ลำลูกกา
+TH-14,Phra Nakhon Si Ayutthaya,Ayutthaya,พระนครศรีอยุธยา,Central,C3,Bang Pa-in; Wang Noi,บางปะอิน; วังน้อย
+TH-15,Ang Thong,Angthong,อ่างทอง,Central,C3,Wiset Chai Chan,วิเศษชัยชาญ
+TH-16,Lop Buri,Lopburi,ลพบุรี,Central,C4,Ban Mi; Khok Samrong,บ้านหมี่; โคกสำโรง
+TH-17,Sing Buri,Singburi,สิงห์บุรี,Central,C3,In Buri,อินทร์บุรี
+TH-18,Chai Nat,Chainat,ชัยนาท,Central,C3,Sankhaburi,สรรคบุรี
+TH-19,Saraburi,,สระบุรี,Central,C4,Kaeng Khoi; Phra Phutthabat,แก่งคอย; พระพุทธบาท
+TH-20,Chon Buri,Chonburi,ชลบุรี,East,CHB,Pattaya; Si Racha; Bang Lamung; Sattahip; Bang Saen,พัทยา; ศรีราชา; บางละมุง; สัตหีบ; บางแสน
+TH-21,Rayong,,ระยอง,East,E1,Map Ta Phut; Ban Chang; Klaeng,มาบตาพุด; บ้านฉาง; แกลง
+TH-22,Chanthaburi,,จันทบุรี,East,E1,Tha Mai; Pong Nam Ron,ท่าใหม่; โป่งน้ำร้อน
+TH-23,Trat,,ตราด,East,E1,Ko Chang; Khlong Yai,เกาะช้าง; คลองใหญ่
+TH-24,Chachoengsao,,ฉะเชิงเทรา,East,E2,Bang Pakong; Phanom Sarakham,บางปะกง; พนมสารคาม
+TH-25,Prachin Buri,Prachinburi,ปราจีนบุรี,East,E2,Kabin Buri; Si Maha Phot,กบินทร์บุรี; ศรีมหาโพธิ
+TH-26,Nakhon Nayok,,นครนายก,Central,C4,Ban Na; Ongkharak,บ้านนา; องครักษ์
+TH-27,Sa Kaeo,Sakaeo,สระแก้ว,East,E2,Aranyaprathet; Wang Nam Yen,อรัญประเทศ; วังน้ำเย็น
+TH-30,Nakhon Ratchasima,Korat; Khorat,นครราชสีมา,Northeast,NE1,Korat; Pak Chong,โคราช; ปากช่อง
+TH-31,Buri Ram,Buriram,บุรีรัมย์,Northeast,NE1,Nang Rong; Lam Plai Mat,นางรอง; ลำปลายมาศ
+TH-32,Surin,,สุรินทร์,Northeast,NE2,Prasat; Tha Tum,ปราสาท; ท่าตูม
+TH-33,Si Sa Ket,Sisaket,ศรีสะเกษ,Northeast,NE2,Kantharalak; Uthumphon Phisai,กันทรลักษ์; อุทุมพรพิสัย
+TH-34,Ubon Ratchathani,Ubon,อุบลราชธานี,Northeast,NE2,Warin Chamrap; Det Udom,วารินชำราบ; เดชอุดม
+TH-35,Yasothon,,ยโสธร,Northeast,NE3,Loeng Nok Tha,เลิงนกทา
+TH-36,Chaiyaphum,,ชัยภูมิ,Northeast,NE1,Phu Khiao; Kaeng Khro,ภูเขียว; แก้งคร้อ
+TH-37,Amnat Charoen,,อำนาจเจริญ,Northeast,NE2,Pathum Ratchawongsa,ปทุมราชวงศา
+TH-38,Bueng Kan,Buengkan,บึงกาฬ,Northeast,NE5,Seka; Phon Charoen,เซกา; พรเจริญ
+TH-39,Nong Bua Lam Phu,Nong Bua Lamphu,หนองบัวลำภู,Northeast,NE4,Si Bun Rueang,ศรีบุญเรือง
+TH-40,Khon Kaen,,ขอนแก่น,Northeast,NE4,Ban Phai; Chum Phae,บ้านไผ่; ชุมแพ
+TH-41,Udon Thani,Udon,อุดรธานี,Northeast,NE4,Kumphawapi; Ban Dung,กุมภวาปี; บ้านดุง
+TH-42,Loei,,เลย,Northeast,NE4,Chiang Khan; Dan Sai,เชียงคาน; ด่านซ้าย
+TH-43,Nong Khai,,หนองคาย,Northeast,NE5,Tha Bo; Si Chiang Mai,ท่าบ่อ; ศรีเชียงใหม่
+TH-44,Maha Sarakham,Mahasarakham,มหาสารคาม,Northeast,NE3,Kosum Phisai; Borabue,โกสุมพิสัย; บรบือ
+TH-45,Roi Et,Roiet,ร้อยเอ็ด,Northeast,NE3,Selaphum; Phon Thong,เสลภูมิ; โพนทอง
+TH-46,Kalasin,,กาฬสินธุ์,Northeast,NE3,Yang Talat; Kuchinarai,ยางตลาด; กุฉินารายณ์
+TH-47,Sakon Nakhon,,สกลนคร,Northeast,NE5,Sawang Daen Din; Phang Khon,สว่างแดนดิน; พังโคน
+TH-48,Nakhon Phanom,,นครพนม,Northeast,NE5,That Phanom; Tha Uthen,ธาตุพนม; ท่าอุเทน
+TH-49,Mukdahan,,มุกดาหาร,Northeast,NE5,Khamcha-i; Dong Luang,คำชะอี; ดงหลวง
+TH-50,Chiang Mai,Chiangmai,เชียงใหม่,North,CNX,San Kamphaeng; Hang Dong; Mae Rim; Fang,สันกำแพง; หางดง; แม่ริม; ฝาง
+TH-51,Lamphun,,ลำพูน,North,N2,Pa Sang; Ban Thi,ป่าซาง; บ้านธิ
+TH-52,Lampang,,ลำปาง,North,N2,Ko Kha; Mae Mo,เกาะคา; แม่เมาะ
+TH-53,Uttaradit,,อุตรดิตถ์,North,C6,Laplae; Phichai,ลับแล; พิชัย
+TH-54,Phrae,,แพร่,North,N2,Den Chai; Rong Kwang,เด่นชัย; ร้องกวาง
+TH-55,Nan,,น่าน,North,N2,Pua; Wiang Sa,ปัว; เวียงสา
+TH-56,Phayao,,พะเยา,North,N1,Chiang Kham; Dok Khamtai,เชียงคำ; ดอกคำใต้
+TH-57,Chiang Rai,Chiangrai,เชียงราย,North,N1,Mae Sai; Chiang Saen; Chiang Khong; Mae Chan,แม่สาย; เชียงแสน; เชียงของ; แม่จัน
+TH-58,Mae Hong Son,,แม่ฮ่องสอน,North,N1,Pai; Mae Sariang,ปาย; แม่สะเรียง
+TH-60,Nakhon Sawan,,นครสวรรค์,Central,C5,Takhli; Chum Saeng,ตาคลี; ชุมแสง
+TH-61,Uthai Thani,,อุทัยธานี,Central,C5,Nong Chang; Ban Rai,หนองฉาง; บ้านไร่
+TH-62,Kamphaeng Phet,,กำแพงเพชร,Central,C5,Khlong Lan; Phran Kratai,คลองลาน; พรานกระต่าย
+TH-63,Tak,,ตาก,West,W1,Mae Sot; Phop Phra; Umphang,แม่สอด; พบพระ; อุ้มผาง
+TH-64,Sukhothai,,สุโขทัย,Central,C6,Sawankhalok; Si Satchanalai,สวรรคโลก; ศรีสัชนาลัย
+TH-65,Phitsanulok,,พิษณุโลก,Central,C6,Wang Thong; Nakhon Thai,วังทอง; นครไทย
+TH-66,Phichit,,พิจิตร,Central,C5,Taphan Hin; Bang Mun Nak,ตะพานหิน; บางมูลนาก
+TH-67,Phetchabun,,เพชรบูรณ์,Central,C6,Lom Sak; Khao Kho,หล่มสัก; เขาค้อ
+TH-70,Ratchaburi,,ราชบุรี,West,C2,Ban Pong; Photharam,บ้านโป่ง; โพธาราม
+TH-71,Kanchanaburi,,กาญจนบุรี,West,W1,Sangkhla Buri; Tha Muang; Thong Pha Phum,สังขละบุรี; ท่าม่วง; ทองผาภูมิ
+TH-72,Suphan Buri,Suphanburi,สุพรรณบุรี,Central,C4,U Thong; Song Phi Nong,อู่ทอง; สองพี่น้อง
+TH-73,Nakhon Pathom,,นครปฐม,Central,C1,Sam Phran; Kamphaeng Saen; Salaya,สามพราน; กำแพงแสน; ศาลายา
+TH-74,Samut Sakhon,,สมุทรสาคร,Central,C2,Mahachai; Krathum Baen,มหาชัย; กระทุ่มแบน
+TH-75,Samut Songkhram,,สมุทรสงคราม,Central,C2,Amphawa,อัมพวา
+TH-76,Phetchaburi,Phetburi,เพชรบุรี,West,C2,Cha-am; Tha Yang,ชะอำ; ท่ายาง
+TH-77,Prachuap Khiri Khan,,ประจวบคีรีขันธ์,West,W1,Hua Hin; Pran Buri; Bang Saphan,หัวหิน; ปราณบุรี; บางสะพาน
+TH-80,Nakhon Si Thammarat,Nakhon Sri Thammarat,นครศรีธรรมราช,South,S3,Thung Song; Sichon,ทุ่งสง; สิชล
+TH-81,Krabi,,กระบี่,South,S2,Ao Nang; Ko Lanta,อ่าวนาง; เกาะลันตา
+TH-82,Phangnga,Phang Nga,พังงา,South,S2,Khao Lak; Takua Pa,เขาหลัก; ตะกั่วป่า
+TH-83,Phuket,,ภูเก็ต,South,PKT,Patong; Kathu; Thalang,ป่าตอง; กะทู้; ถลาง
+TH-84,Surat Thani,Surat,สุราษฎร์ธานี,South,S1,Ko Samui; Ko Pha-ngan; Chaiya,เกาะสมุย; เกาะพะงัน; ไชยา
+TH-85,Ranong,,ระนอง,South,S1,Kra Buri; Kapoe,กระบุรี; กะเปอร์
+TH-86,Chumphon,,ชุมพร,South,S1,Lang Suan; Tha Sae,หลังสวน; ท่าแซะ
+TH-90,Songkhla,,สงขลา,South,S3,Hat Yai; Sadao; Padang Besar,หาดใหญ่; สะเดา; ปาดังเบซาร์
+TH-91,Satun,,สตูล,South,S2,La-ngu; Ko Lipe,ละงู; เกาะหลีเป๊ะ
+TH-92,Trang,,ตรัง,South,S2,Kantang; Huai Yot,กันตัง; ห้วยยอด
+TH-93,Phatthalung,,พัทลุง,South,S3,Khuan Khanun; Pak Phayun,ควนขนุน; ปากพะยูน
+TH-94,Pattani,,ปัตตานี,South,S4,Nong Chik; Sai Buri,หนองจิก; สายบุรี
+TH-95,Yala,,ยะลา,South,S4,Betong; Raman,เบตง; รามัน
+TH-96,Narathiwat,,นราธิวาส,South,S4,Su-ngai Kolok; Tak Bai,สุไหงโก-ลก; ตากใบ

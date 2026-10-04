@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Health &amp; Help is an open list of organisations in Thailand that offer sexual and mental health services to sex workers, with a cited source for every record, a province coverage board and a downloadable dataset.">
+<meta name="theme-color" content="#170909">
+<title>Health &amp; Help</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='12' cy='16' r='8.5' fill='none' stroke='%23C9A464' stroke-width='2.6'/%3E%3Ccircle cx='20' cy='16' r='8.5' fill='none' stroke='%23C9A464' stroke-width='2.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Noto+Serif+Thai:wght@400;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<div class="utility">
+  <div class="wrap utility__in">
+    <p class="utility__left"><span data-i18n="u_label">Open data · Thailand</span><span class="utility__date" data-t="u_updated"></span></p>
+    <p class="utility__right">
+      <a href="#dataset" data-i18n="u_dataset">Dataset</a>
+      <a href="#how" data-i18n="u_method">Method</a>
+    </p>
+  </div>
+</div>
+
+<header class="masthead" id="masthead">
+  <div class="masthead__bar metal edge">
+    <a class="brand" href="#top">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="12" cy="16" r="8.5"/><circle cx="20" cy="16" r="8.5"/></svg>
+      <span class="brand__name">Health &amp; Help</span><span class="brand__th" lang="th">สุขภาพและความช่วยเหลือ</span>
+    </a>
+    <p class="masthead__strap" data-i18n="strap">Sexual and mental health services · Thailand</p>
+    <nav class="nav" id="nav" aria-label="Main" data-i18n-aria="nav_aria">
+      <a href="#find" data-i18n="nav_find">Find a service</a>
+      <a href="#gaps" data-i18n="nav_gaps">Province gaps</a>
+      <a href="#how" data-i18n="nav_how">Method</a>
+      <a href="#dataset" data-i18n="nav_data">Dataset</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+    </nav>
+    <div class="masthead__actions">
+      <button class="lang" type="button" data-act="lang" lang="th">ไทย</button>
+      <button class="menu" type="button" data-act="menu" aria-expanded="false" aria-controls="nav">
+        <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+        <span class="menu__txt" data-i18n="menu">Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero metal" id="top">
+  <div class="wrap">
+    <p class="kicker" data-i18n="hero_kicker">Open dataset · Prototype · Thailand</p>
+    <h1 data-i18n-html="hero_h1">Sexual and mental health services <span class="soft">for sex workers in Thailand</span></h1>
+    <p class="lede" data-i18n="hero_lede">Health &amp; Help is an open dataset of organisations in Thailand that provide sexual or mental health services and whose own pages, or other published sources, name sex workers among the people that the organisations serve. Our project used a large language model once to search the web and to record each organisation with a sentence copied from a web page as evidence. A script with no AI then checked whether each copied sentence appears on the web page that the model cited. A small model now in development will answer questions offline on the phones that people already use.</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#find"><span data-i18n="cta_find">Find a service</span><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></a>
+      <a class="btn btn--ghost" href="data/health_and_help_candidates.csv" download><span data-i18n="cta_csv">Download the data (CSV)</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="finder" id="find" aria-labelledby="find-h">
+  <div class="wrap">
+    <div class="finder__head">
+      <div>
+        <p class="kicker" data-i18n="find_k">Finder</p>
+        <h2 class="h2" id="find-h" data-i18n="find_h">Find a service</h2>
+      </div>
+      <p class="finder__sub" data-i18n="find_sub">Each pin sits on a provincial capital. Contact the organisation for the address of a service before travelling.</p>
+    </div>
+
+    <div class="filterbar" id="filterbar">
+      <div class="fb-row fb-row--top">
+        <label class="search">
+          <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="5.5"/><path d="m13.2 13.2 3.6 3.6"/></svg>
+          <span class="sr-only" data-i18n="search_aria">Search</span>
+          <input id="f-q" type="search" autocomplete="off" spellcheck="false" placeholder="Search organisations, provinces or services" data-i18n-ph="search_ph">
+        </label>
+        <select id="f-service" class="select" aria-label="Service" data-i18n-aria="service_aria"></select>
+        <button class="fb-toggle" type="button" data-act="filters" aria-expanded="false" aria-controls="fb-more">
+          <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h9M15 6h2M3 14h2M8 14h9"/><circle cx="13.5" cy="6" r="1.8"/><circle cx="6.5" cy="14" r="1.8"/></svg>
+          <span id="fb-toggle-label">Filters</span>
+        </button>
+        <div class="tabs" role="group" aria-label="View" data-i18n-aria="view_aria">
+          <button class="tab" type="button" data-act="view" data-v="map" aria-pressed="true">
+            <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14s4.5-4.2 4.5-7.5a4.5 4.5 0 0 0-9 0C3.5 9.8 8 14 8 14Z"/><circle cx="8" cy="6.5" r="1.6"/></svg>
+            <span data-i18n="view_map">Map</span>
+          </button>
+          <button class="tab" type="button" data-act="view" data-v="list" aria-pressed="false">
+            <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 4h8M5.5 8h8M5.5 12h8M2.5 4h.5M2.5 8h.5M2.5 12h.5"/></svg>
+            <span data-i18n="view_list">List</span>
+          </button>
+          <button class="tab" type="button" data-act="view" data-v="grid" aria-pressed="false">
+            <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="4.5" height="4.5" rx="1"/><rect x="9" y="2.5" width="4.5" height="4.5" rx="1"/><rect x="2.5" y="9" width="4.5" height="4.5" rx="1"/><rect x="9" y="9" width="4.5" height="4.5" rx="1"/></svg>
+            <span data-i18n="view_grid">Grid</span>
+          </button>
+        </div>
+      </div>
+      <div class="fb-row fb-row--more" id="fb-more">
+        <div class="group" role="group" aria-labelledby="g-region">
+          <span class="group__label" id="g-region" data-i18n="g_region">Region</span>
+          <span class="group__btns" id="f-region"></span>
+        </div>
+        <div class="group" role="group" aria-labelledby="g-evidence">
+          <span class="group__label" id="g-evidence" data-i18n="g_evidence">Evidence</span>
+          <span class="group__btns" id="f-evidence"></span>
+          <button class="info" type="button" data-act="info" aria-expanded="false" aria-controls="popover" aria-label="What the evidence levels mean" data-i18n-aria="info_aria">i</button>
+        </div>
+        <div class="group">
+          <button class="filter-btn" type="button" id="f-led" data-act="led" aria-pressed="false"><span data-i18n="led">Led by sex workers</span><span class="n" id="n-led"></span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="countline" id="countline" aria-live="polite"></div>
+    <noscript><p class="alert" data-i18n="noscript">The finder needs JavaScript. The dataset can still be downloaded as data/health_and_help_candidates.csv.</p></noscript>
+
+    <div class="mapview" id="view-map">
+      <div class="mapcol">
+        <div class="map" id="map" role="region" aria-label="Map of Thailand with one pin per province" data-i18n-aria="map_aria"></div>
+        <ul class="legend">
+          <li><span class="lg lg--covered" aria-hidden="true"></span><span data-i18n="lg_covered">Source names sex workers</span></li>
+          <li><span class="lg lg--unclear" aria-hidden="true"></span><span data-i18n="lg_unclear">Source does not clearly name sex workers</span></li>
+          <li><span class="lg lg--gap" aria-hidden="true"></span><span data-i18n="lg_gap">No candidate yet</span></li>
+          <li><span class="lg lg--hidden" aria-hidden="true"></span><span data-i18n="lg_hidden">Hidden by the filters</span></li>
+          <li class="legend__note" data-i18n="lg_size">Pin size follows the number of matching sites</li>
+        </ul>
+      </div>
+      <aside class="panel" id="panel"></aside>
+    </div>
+    <div class="results" id="view-list" hidden></div>
+    <div class="results" id="view-grid" hidden></div>
+  </div>
+</section>
+
+<section class="gaps metal" id="gaps" aria-labelledby="gaps-h">
+  <div class="wrap">
+    <div class="gaps__head">
+      <div>
+        <p class="kicker" data-i18n="gaps_k">Coverage</p>
+        <h2 class="h2" id="gaps-h" data-t="gaps_h"></h2>
+      </div>
+      <div>
+        <p class="lede" data-t="gaps_p"></p>
+        <p class="gaps__nw" data-t="gaps_nw"></p>
+      </div>
+    </div>
+    <ul class="legend legend--dark">
+      <li><span class="pchip-sw pchip-sw--covered" aria-hidden="true"></span><span data-t="bl_covered"></span></li>
+      <li><span class="pchip-sw pchip-sw--unclear" aria-hidden="true"></span><span data-t="bl_unclear"></span></li>
+      <li><span class="pchip-sw pchip-sw--gap" aria-hidden="true"></span><span data-t="bl_gap"></span></li>
+    </ul>
+    <div class="rack" id="rack"></div>
+  </div>
+</section>
+
+<section class="how" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="how__head">
+      <div>
+        <p class="kicker" data-i18n="how_k">Method</p>
+        <h2 class="h2" id="how-h" data-i18n="how_h">How the dataset is built</h2>
+      </div>
+      <p class="how__p" data-i18n="how_p">A large language model searched the web once. Every later step uses a script or a small model with no cost per use.</p>
+    </div>
+
+    <div class="rail" id="rail">
+      <div class="plate metal">
+        <button class="plate__spine" type="button" id="plate-1" aria-expanded="false" aria-controls="plate-1-panel">
+          <span class="plate__vname" data-i18n="p1_v">Web search</span><span class="plate__vnum" aria-hidden="true">01</span>
+        </button>
+        <div class="plate__panel" id="plate-1-panel" role="region" aria-labelledby="plate-1">
+          <p class="plate__tok"><i class="dot" aria-hidden="true"></i><span data-i18n="p_done">Complete</span></p>
+          <h3 class="plate__name" data-i18n="p1_t">A large model searched the web once</h3>
+          <p class="plate__note" data-i18n="p1_p">Claude Sonnet 5.5 ran three rounds of web search and recorded each organisation with a sentence copied from a web page as evidence.</p>
+          <ul class="plate__list">
+            <li data-i18n="p1_l1">Round 1 · by region</li>
+            <li data-i18n="p1_l2">Round 2 · by groups of provinces</li>
+            <li data-i18n="p1_l3">Round 3 · provinces with no candidate yet</li>
+          </ul>
+          <p class="plate__foot"><span data-fig="p1_f"></span><a class="go" href="#find" data-i18n="p1_go">Open the finder →</a></p>
+        </div>
+      </div>
+
+      <div class="plate metal">
+        <button class="plate__spine" type="button" id="plate-2" aria-expanded="false" aria-controls="plate-2-panel">
+          <span class="plate__vname" data-i18n="p2_v">Source check</span><span class="plate__vnum" aria-hidden="true">02</span>
+        </button>
+        <div class="plate__panel" id="plate-2-panel" role="region" aria-labelledby="plate-2">
+          <p class="plate__tok"><i class="dot" aria-hidden="true"></i><span data-i18n="p_done">Complete</span></p>
+          <h3 class="plate__name" data-i18n="p2_t">A script checked every copied sentence</h3>
+          <p class="plate__note" data-i18n="p2_p">Each record in the dataset includes a sentence that the large model copied from a web page as evidence that the organisation serves sex workers. A script with no AI downloaded each of those web pages and searched the page for the copied sentence.</p>
+          <ul class="plate__list plate__list--wide">
+            <li data-fig="p2_l1"></li>
+            <li data-fig="p2_l2"></li>
+            <li data-fig="p2_l3"></li>
+          </ul>
+          <p class="plate__foot"><span data-fig="p2_f"></span><a class="go" href="#dataset" data-i18n="p2_go">Download the results →</a></p>
+        </div>
+      </div>
+
+      <div class="plate metal">
+        <button class="plate__spine" type="button" id="plate-3" aria-expanded="false" aria-controls="plate-3-panel">
+          <span class="plate__vname" data-i18n="p3_v">Inclusion rule</span><span class="plate__vnum" aria-hidden="true">03</span>
+        </button>
+        <div class="plate__panel" id="plate-3-panel" role="region" aria-labelledby="plate-3">
+          <p class="plate__tok"><i class="dot" aria-hidden="true"></i><span data-i18n="p_done">Complete</span></p>
+          <h3 class="plate__name" data-i18n="p3_t">Two conditions decide which sites are included</h3>
+          <p class="plate__note" data-i18n="p3_p">A published source names sex workers among the people that the organisation serves, and the site offers at least one of the nine core services below. The number after each service is the number of sites found by the search that offer the service.</p>
+          <ul class="plate__list" id="plate-core"></ul>
+          <p class="plate__foot"><span data-fig="p3_f"></span><a class="go" href="#gaps" data-i18n="p3_go">See the province gaps →</a></p>
+        </div>
+      </div>
+
+      <div class="plate metal">
+        <button class="plate__spine" type="button" id="plate-4" aria-expanded="false" aria-controls="plate-4-panel">
+          <span class="plate__vname" data-i18n="p4_v">Privacy</span><span class="plate__vnum" aria-hidden="true">04</span>
+        </button>
+        <div class="plate__panel" id="plate-4-panel" role="region" aria-labelledby="plate-4">
+          <p class="plate__tok"><i class="dot" aria-hidden="true"></i><span data-i18n="p4_s">Applied to every record</span></p>
+          <h3 class="plate__name" data-i18n="p4_t">What the dataset never records</h3>
+          <p class="plate__note" data-i18n="p4_p">The dataset records only contact details that organisations publish themselves.</p>
+          <ul class="plate__list plate__list--wide">
+            <li data-i18n="p4_l1">No address of a shelter or safe house</li>
+            <li data-i18n="p4_l2">No names of staff, volunteers or clients</li>
+            <li data-i18n="p4_l3">Location at province and district level only</li>
+            <li data-i18n="p4_l4">Map pins at provincial capitals</li>
+          </ul>
+          <p class="plate__foot"><span data-i18n="p4_f">No map coordinates · Published contacts only</span></p>
+        </div>
+      </div>
+
+      <div class="plate plate--dormant metal">
+        <button class="plate__spine" type="button" id="plate-5" aria-expanded="false" aria-controls="plate-5-panel">
+          <span class="plate__vname" data-i18n="p5_v">Offline answers</span><span class="plate__vnum" aria-hidden="true">05</span>
+        </button>
+        <div class="plate__panel" id="plate-5-panel" role="region" aria-labelledby="plate-5">
+          <p class="plate__tok"><i class="dot dot--off" aria-hidden="true"></i><span data-i18n="dev">In development</span></p>
+          <h3 class="plate__name" data-i18n="p5_t">A small model will answer on the phone</h3>
+          <p class="plate__note" data-i18n="p5_p">A small classifier that runs in the browser will match a question to the checked records and answer only from those records, with no internet connection.</p>
+          <ul class="plate__list plate__list--wide">
+            <li data-i18n="p5_l1">Thai</li>
+            <li data-i18n="p5_l2">English</li>
+            <li data-i18n="p5_l3">Burmese</li>
+            <li data-i18n="p5_l4">SMS simulator for basic phones</li>
+          </ul>
+          <p class="plate__foot"><span data-i18n="p5_f">No connection needed · No cost per question</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="downloads metal" id="dataset" aria-labelledby="dl-h">
+  <div class="wrap">
+    <p class="kicker" data-i18n="dl_k">Downloads</p>
+    <h2 class="dl__h" id="dl-h" data-i18n="dl_h">Take the October 2026 data with you</h2>
+    <div class="dl__grid">
+      <a class="dl" href="data/health_and_help_candidates.csv" download>
+        <span class="dl__top"><span class="dl__t" data-i18n="dl1_t">Candidate sites</span><svg class="dl__ico ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8M4.5 7 8 10.5 11.5 7M3 13.5h10"/></svg></span>
+        <span class="dl__p" data-t="dl1_p"></span>
+        <span class="dl__meta" data-i18n="dl1_m">CSV · UTF-8</span>
+      </a>
+      <a class="dl" href="data/codebook.md" target="_blank" rel="noopener">
+        <span class="dl__top"><span class="dl__t" data-i18n="dl2_t">Codebook</span><svg class="dl__ico ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 3.5h7v7M12.5 3.5l-9 9"/></svg></span>
+        <span class="dl__p" data-i18n="dl2_p">Definitions of every column in the CSV file, the inclusion rule and the service categories.</span>
+        <span class="dl__meta" data-i18n="dl2_m">Markdown · Opens in a new tab</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" id="about">
+  <div class="wrap footer__grid">
+    <div>
+      <a class="brand brand--light" href="#top">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="12" cy="16" r="8.5"/><circle cx="20" cy="16" r="8.5"/></svg>
+        <span class="brand__name">Health &amp; Help</span><span class="brand__th" lang="th">สุขภาพและความช่วยเหลือ</span>
+      </a>
+      <p data-i18n="foot_about">Health &amp; Help is a prototype built by Jason Hung for the Small AI for Development challenge of the 7th Hack-Nation Global AI Hackathon, October 2026.</p>
+      <p class="footer__built" data-t="foot_built"></p>
+    </div>
+    <div>
+      <h3 data-i18n="foot_limits_h">Limits</h3>
+      <ul class="footer__list">
+        <li data-i18n="foot_l1">A province without a record may still have services that the search did not find.</li>
+        <li data-i18n="foot_l3">Pins mark provincial capitals and are approximate.</li>
+        <li data-i18n="foot_l4">Services change, so check with the organisation before travelling.</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="hovercard" id="hovercard" aria-hidden="true"></div>
+<div class="popover" id="popover" role="dialog" aria-labelledby="pop-h" hidden></div>
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet__card" id="sheet-card" role="dialog" aria-modal="true" aria-labelledby="sheet-title" tabindex="-1"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "service_types": [
+    {"id": "hiv_testing", "en": "HIV testing", "th": "ตรวจเอชไอวี", "core": true},
+    {"id": "sti_testing", "en": "STI testing", "th": "ตรวจโรคติดต่อทางเพศสัมพันธ์", "core": true},
+    {"id": "sti_treatment", "en": "STI treatment", "th": "รักษาโรคติดต่อทางเพศสัมพันธ์", "core": true},
+    {"id": "hiv_treatment", "en": "HIV treatment", "th": "รักษาเอชไอวีด้วยยาต้านไวรัส", "core": true},
+    {"id": "prep", "en": "PrEP (pre-exposure prophylaxis)", "th": "เพร็พ ยาป้องกันก่อนสัมผัสเชื้อเอชไอวี", "core": true},
+    {"id": "pep", "en": "PEP (post-exposure prophylaxis)", "th": "เป๊ป ยาป้องกันหลังสัมผัสเชื้อเอชไอวี", "core": true},
+    {"id": "condoms_lubricants", "en": "Condoms and lubricant", "th": "ถุงยางอนามัยและสารหล่อลื่น", "core": true},
+    {"id": "referral", "en": "Referral to sexual health or mental health services", "th": "ส่งต่อบริการสุขภาพทางเพศหรือสุขภาพจิต", "core": true},
+    {"id": "mental_health", "en": "Mental health support", "th": "สุขภาพจิตและการให้คำปรึกษา", "core": true},
+    {"id": "cervical_screening", "en": "Cervical cancer screening", "th": "ตรวจคัดกรองมะเร็งปากมดลูก", "core": false},
+    {"id": "contraception_pregnancy", "en": "Contraception and pregnancy services", "th": "คุมกำเนิดและบริการด้านการตั้งครรภ์", "core": false},
+    {"id": "violence_support", "en": "Support after violence", "th": "ช่วยเหลือผู้ถูกกระทำความรุนแรง", "core": false},
+    {"id": "legal_aid", "en": "Legal aid", "th": "ช่วยเหลือทางกฎหมาย", "core": false},
+    {"id": "labour_rights", "en": "Labour rights", "th": "สิทธิแรงงาน", "core": false},
+    {"id": "shelter", "en": "Shelter", "th": "ที่พักพิง", "core": false},
+    {"id": "education_livelihood", "en": "Education and livelihood", "th": "การศึกษาและอาชีพ", "core": false},
+    {"id": "migrant_support", "en": "Support for migrant workers", "th": "ช่วยเหลือแรงงานข้ามชาติ", "core": false},
+    {"id": "harm_reduction", "en": "Harm reduction for people who use drugs", "th": "ลดอันตรายจากการใช้สารเสพติด", "core": false},
+    {"id": "outreach", "en": "Outreach", "th": "งานเข้าถึงชุมชนเชิงรุก", "core": false}
+  ],
+  "populations": [
+    {"id": "female_sex_workers", "en": "Female sex workers", "th": "พนักงานบริการหญิง"},
+    {"id": "male_sex_workers", "en": "Male sex workers", "th": "พนักงานบริการชาย"},
+    {"id": "transgender_sex_workers", "en": "Transgender sex workers", "th": "พนักงานบริการข้ามเพศ"},
+    {"id": "migrant_sex_workers", "en": "Migrant sex workers", "th": "พนักงานบริการข้ามชาติ"},
+    {"id": "young_people", "en": "Young people", "th": "เยาวชน"},
+    {"id": "men_who_have_sex_with_men", "en": "Men who have sex with men", "th": "ชายที่มีเพศสัมพันธ์กับชาย"},
+    {"id": "transgender_people", "en": "Transgender people", "th": "คนข้ามเพศ"},
+    {"id": "people_living_with_hiv", "en": "People living with HIV", "th": "ผู้อยู่ร่วมกับเชื้อเอชไอวี"},
+    {"id": "people_who_use_drugs", "en": "People who use drugs", "th": "ผู้ใช้สารเสพติด"},
+    {"id": "general_public", "en": "General public", "th": "ประชาชนทั่วไป"}
+  ],
+  "org_types": [
+    {"id": "ngo", "en": "Non-governmental organisation or foundation", "th": "องค์กรพัฒนาเอกชนหรือมูลนิธิ"},
+    {"id": "community_group", "en": "Community group", "th": "กลุ่มชุมชน"},
+    {"id": "network", "en": "Network or coalition", "th": "เครือข่าย"},
+    {"id": "international", "en": "International organisation or UN agency", "th": "องค์กรระหว่างประเทศ"},
+    {"id": "government", "en": "Government service", "th": "หน่วยงานรัฐ"},
+    {"id": "university", "en": "University service or research clinic", "th": "มหาวิทยาลัย"},
+    {"id": "other", "en": "Other", "th": "อื่น ๆ"}
+  ],
+  "levels": [
+    {"id": "international", "en": "International or regional", "th": "ระหว่างประเทศ"},
+    {"id": "national", "en": "National", "th": "ระดับประเทศ"},
+    {"id": "provincial", "en": "Provincial", "th": "ระดับจังหวัด"},
+    {"id": "local", "en": "District or city", "th": "ระดับอำเภอหรือเมือง"},
+    {"id": "grassroots", "en": "Grassroots community group", "th": "กลุ่มชุมชนฐานราก"}
+  ],
+  "approach": [
+    {"id": "rights_based", "en": "Rights-based, as the organisation describes itself"},
+    {"id": "rescue_or_exit", "en": "Rescue or exit, as the organisation describes itself"},
+    {"id": "not_stated", "en": "Not stated"}
+  ],
+  "service_modes": ["in_person", "outreach", "mobile_clinic", "online", "phone"],
+  "fees": ["free", "low_cost", "paid", "not_stated"],
+  "languages": ["th", "en", "my", "shn", "lo", "km", "zh"],
+  "status": ["active", "reduced", "closed", "unknown"],
+  "verification": ["ai_extracted", "human_checked"],
+  "search_terms": {
+    "sex_workers_th": ["พนักงานบริการทางเพศ", "พนักงานบริการหญิง", "ผู้ให้บริการทางเพศ", "กลุ่มประชากรหลัก", "ผู้ค้าบริการทางเพศ", "พนักงานบริการชาย", "พนักงานบริการข้ามเพศ"],
+    "sex_workers_en": ["sex workers", "sex work", "entertainment workers", "service workers", "female sex workers", "male sex workers", "transgender sex workers", "key populations"],
+    "services_th": ["ตรวจเอชไอวี", "ตรวจโรคติดต่อทางเพศสัมพันธ์", "เพร็พ", "เป๊ป", "ถุงยางอนามัย", "คลินิกนิรนาม", "ปรึกษาสุขภาพจิต"],
+    "services_en": ["HIV testing", "STI testing", "PrEP", "PEP", "condoms", "drop-in centre", "mental health counselling", "key population-led health services"]
+  }
+}

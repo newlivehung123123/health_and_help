@@ -1,0 +1,4 @@
+round,job_id,name,field,value,reason
+3,r3_social,"Bangrak STIs Center (Bangrak Medical Center), Department of Disease Control",city,Sathorn,"The evidence page gives the address 9 Soi Sathorn 9, South Sathorn Road, Yan Nawa, Sathorn district, Bangkok 10120. Bang Rak is the name of the centre and not its district, so the record joins the round 1 site in Sathorn."
+2,r2_c1,Service Workers in Group Foundation (SWING) - Nakhon Pathom,exclude,yes,"The evidence page lists SWING branches in Silom, Saphan Khwai and Pattaya only. Nakhon Pathom and the numbers 09 4563 4537 and 08 2582 1714 are listed under the Rainbow Sky Association of Thailand, which round 1 already records in Nakhon Pathom."
+2,r2_s3,Service Workers in Group Foundation (SWING) - Hat Yai,exclude,yes,"The evidence page lists SWING branches in Silom, Saphan Khwai and Pattaya only. Hat Yai is listed under the Rainbow Sky Association of Thailand, which round 1 already records in Hat Yai."
